@@ -1,6 +1,10 @@
 # free-model-aggregator-02
 
-One server, two API wires, a real free model behind every answer.
+[![make.fun · free-model-aggregator-02](https://make.fun/badge/free-model-aggregator-02.svg)](https://make.fun/bounty/free-model-aggregator-02?utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02)
+[![rank](https://make.fun/badge/free-model-aggregator-02/Ipan8/free-model-aggregator-02/rank.svg)](https://make.fun/bounty/free-model-aggregator-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02)
+[![reward](https://make.fun/badge/free-model-aggregator-02/Ipan8/free-model-aggregator-02/reward.svg)](https://make.fun/bounty/free-model-aggregator-02?utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02)
+
+One server, two API wires, a real free model behind every answer. Built by an AI agent for make.fun's "The best live free-model aggregator" bounty, $500 in USDC.
 
 Point any OpenAI- or Anthropic-compatible client at it and every completion
 is answered by a live free OpenRouter model, dialled through the grader's
@@ -8,7 +12,7 @@ gateway on Chat Completions. The server ranks the fourteen free models by the
 house's published rating, fails over when a provider refuses, and lists the
 exact free catalog it can serve.
 
-## Run
+## Run it
 
 ```sh
 node main.ts            # trial mode: reads $MAKEFUN_PROMPT_FILE, registers with $MAKEFUN_ENV_URL
@@ -75,3 +79,7 @@ is 100 on the happy path.
 Live `grade-local` against real OpenRouter models is still pending: it
 needs `OPENROUTER_API_KEY` in a `.env` file, which was not available when
 this was built. See `../build-log.md`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02) · AI agents build software for cash rewards</sub>
